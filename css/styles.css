@@ -1,0 +1,960 @@
+
+/* основой цвет текста #757575
+
+вторичный цвет текста #212121
+акцент #2196F3
+
+цвет фона #F5F5F5 */
+:root{
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --nav-text-color:#212121;
+    --accent-text-color:#2196F3;
+    --white-color:#FFFFFF;
+    --timing-fuction:cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.section {
+    padding: 94px 215px;
+    
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* background-color: #b5ea89; */
+}
+
+
+body{
+    background: #FFFFFF;
+    color:var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 2;
+    
+}
+
+img{
+        display: block; max-width:100%;}
+    
+ul{
+    list-style: none;
+}
+.list{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* LOGO */
+.logo {
+    color:#2196F3;
+ text-decoration: none;
+ font-family:'Raleway', sans-serif;
+ font-size: 26px;
+ line-height: 1.2;
+ transition: color 250ms var(--timing-fuction);
+     }
+.logo:hover{
+    color:#0032d6;
+          }
+ .logo-two {
+    color:#FFFFFF;
+    transition: color 250ms var(--timing-fuction)
+}
+ .logo-two:hover{
+  color:#ffee01;  
+ }
+ .logo-three {
+    color:#000000;
+ transition: color 250ms var(--timing-fuction)
+}
+ .logo-three:hover{
+    color:#fbff05;
+ }
+
+    /* SITE-NAV */
+
+.main-nav{
+    
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+   
+   
+}
+ .navigation{
+   
+    display: flex;
+    align-items: center;
+
+    
+ }
+.site-nav{
+  display:flex;
+  margin-left: 93px;
+}
+
+.site-nav__item +.site-nav__item{
+    margin-left: 50px;
+}
+
+.site-nav__link {
+    position: relative;
+    display: block;
+    color:var(--nav-text-color);
+    text-decoration: none;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 1.1;
+ letter-spacing: 0.02em;
+ padding-top: 32px;
+ padding-bottom: 32px;
+ transition: color 250ms var(--timing-fuction);
+}
+.site-nav :hover , .site-nav :focus {
+    color: var(--accent-text-color);
+}
+
+.site-nav__link:active{
+    color:#F45656 ;
+}
+/* .site-nav .link.current::after{
+    color:var(--accent-text-color);
+    width:100%;
+    
+} */
+.site-nav__link--current{
+        color: var(--accent-text-color);
+        
+    }
+ .site-nav__link--current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color:var(--accent-text-color);
+    border-radius: 2px;
+    
+    
+    }
+   
+/* SITE-CONTACTE */
+ .site-contacte__link{
+    display: flex;
+    align-items: center;
+   
+ }
+ 
+ 
+.site-contacte{
+    
+    display:flex;
+    margin-left: auto;
+}
+.site-contacte__item + .site-contacte__item{
+    margin-left: 50px;
+
+}
+ 
+.site-contacte__link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ }
+.site-contacte__link:hover ,.site-contacte__link:focus{
+    color:var(--accent-text-color);
+ }
+ 
+ 
+ 
+    
+ 
+ .site-contacte__icon{
+    margin-right: 10px;
+    fill:#afb1b8;
+ }
+ 
+.site-contacte__link:hover svg{
+    fill: var(--accent-text-color);
+}
+.site-contacte__link:focus svg{
+ fill: var(--accent-text-color);
+}
+
+
+
+  /* SERVICES */
+
+  
+  .services{
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    max-width:1600px ;
+    background-image:  linear-gradient(
+    rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/services.jpg);
+    background-position: center;
+    text-align: center;
+    padding:200px 452px ;
+  }
+  .services__title{
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+
+
+  }
+  .services__button{
+    background-color:#2196F3 ;
+    color: var(--white-color);
+    cursor: pointer;
+    font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 2;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+   min-width: 216px;
+   border-radius: 4px;
+   padding: 10px 32px;
+   border:none;
+    }
+    .services__button:hover,.services__button:focus{
+        background-color:#188CE8;
+    }
+
+    
+    /* SECTION */
+   
+
+.section__title{
+color:var(--title-text-color);
+font-size: 36px;
+line-height: 1.2;
+text-align:center;
+margin-top: 0;
+margin-bottom: 50px;
+text-align: center;
+}
+/* .section__title--centered{
+    text-align: center;
+} */
+/* quality-list */
+.quality{
+    display: flex;
+}
+.quality__item + .quality__item{
+    margin-left: 30px;
+}
+.quality__title{
+    color: var(--title-text-color);
+    font-size: 14px;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+.quality__text{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.quality__item {
+    display: inline-block;
+}
+.quality__icon {
+    margin:25px 100px;
+}
+.quality__box{
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+   
+}
+/* .quality .item::before{
+    display:block;
+    content: "";
+    height:120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-image:url(../images/antenna.svg);
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    }
+   
+
+.quality .item:nth-last-child(1)::before{
+    background-image: url(../images/astronaut.svg);
+}
+.quality .item:nth-last-child(2)::before{
+    background-image: url(../images/diagram.svg);
+}
+.quality .item:nth-last-child(3)::before{
+    background-image: url(../images/clock.svg);
+}  */
+
+
+                  /* Working list */
+.section--no-pudding{
+padding-top:0 ;
+}
+.working{
+    
+    display: flex;
+}
+.working__item + .working__item{
+    margin-left: 30px;
+}
+.working__item{
+    position: relative;
+}
+.working__name{
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-height: 70px;
+    padding: 27px 107px;
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    line-height: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    white-space: nowrap;
+    bottom:0;
+    left: 0;
+    
+}
+
+
+
+/* -------------------Team--------------------*/
+.section--bk{
+    background-color: #F5F4FA;
+}
+
+
+
+.team{
+    display: flex;
+   
+    
+}
+.team__item{
+        padding-bottom: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        width: 270px;
+        height: 428px;
+
+
+}
+.team__item + .team__item{
+    margin-left: 30px;
+}
+.team__title {
+ color: var(--title-text-color);
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.2;
+ margin-top:30px ;
+ margin-bottom: 10px;
+ text-align: center;
+ }
+ 
+ .team__position{
+
+font-size: 16px;
+line-height: 1.2;
+margin-top: 0;
+margin-bottom: 0;
+text-align: center;
+}
+.social{
+display: flex;
+justify-content: space-around;
+margin: 16px 32px 0px 32px;
+padding: 0;
+    }
+
+.social__item{
+    
+   width:44px;
+    height:44px; 
+    
+}
+.social__link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+   width:44px;
+   height:44px;
+   transition: 
+   background 250ms var(--timing-fuction),
+   border-radius 250ms var(--timing-fuction)
+   ;
+
+}
+.social__link:hover{
+    
+    background:var(--accent-text-color);
+    border-radius: 50%;
+    }
+.social__link:focus{
+    
+    background:var(--accent-text-color);
+    border-radius: 50%;
+    
+}
+.social__link:hover svg{
+    fill: #FFFFFF;}
+.social__link:focus svg{
+    fill: #FFFFFF;}
+
+.social__icon{
+  
+    fill:#afb1b8 ;
+    transition: fill 250ms var(--timing-fuction);}
+    
+
+/* КЛИЕНТЫ */
+
+
+.client
+{padding: 0;
+    display:flex;
+    margin: 0;
+    gap: 30px;
+ }
+ .client__icon{
+   fill:#afb1b8;
+   transition: fill 250ms var(--timing-fuction);
+ }
+    
+   .client__link{
+    display: flex;
+    max-width: 170px;
+    max-height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding:16px 32px ;
+    align-items: center;
+    
+    transition: 
+    border-color 250ms var(--timing-fuction);
+    
+    }
+    
+ .client__link:hover{
+    border-color: var(--accent-text-color);
+ }
+ .client__link:focus{
+    border-color: var(--accent-text-color);
+ }
+
+ .client__link:hover svg{
+    fill:var(--accent-text-color);}
+ .client__link:focus svg{
+    fill:var(--accent-text-color); } 
+
+
+    
+             /*  ФУТЕР  */
+
+ .footer{
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+ }
+ .footer__link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+ .footer__link:hover ,.footer__link:focus{
+    color: var(--accent-text-color);
+ } 
+  .footer__tell {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .footer__tell:hover , .footer__tell:focus{
+    color: var(--accent-text-color);
+ }
+ address {
+    color:#FFFFFF;
+ font-style: normal;
+  margin-top: 20px;
+   }
+   .box{
+    display:flex;
+    align-items: center;
+   }
+   .box-2{
+    margin-left: 70px;
+   }
+   
+  strong{
+    color: 
+   #FFFFFF;
+   
+  }
+   .footer-social__icon{
+    fill:#FFFFFF;
+   }
+   .footer-social{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0;
+   }
+   .footer-social__link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .footer-social__link:hover{
+    background-color: var(--accent-text-color);
+   }
+   .footer-social__link:focus{
+    background-color: var(--accent-text-color);
+   }
+
+   /* -------------ПІДПИСАТИСЯ-------------------- */
+   .box-3{
+    display: flex;
+    margin-left: 93px;
+    align-items: end;
+    width: 570px;
+    height: 86px;
+   
+   }
+   .sign{
+    display: flex;
+    flex-direction: column;
+
+   } 
+   .sign__title{
+    margin-bottom: 20px;
+    
+   }
+   .sign__up{
+    width: 380px;
+    height: 50px;
+    padding: 16px;
+    background: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color:var(--accent-text-color);
+   
+    }
+    .sign__up::placeholder{
+       color: rgba(255, 255, 255, 0.6);
+     }
+    .sign__up:focus{
+        animation-name: changeBgColor;
+        animation-duration: 4000ms;
+        animation-timing-function: var(--timing-fuction);
+        animation-delay: 1000ms;
+        animation-iteration-count: infinite;
+        
+        
+    }
+    @keyframes changeBgColor{
+      0%{
+        background-color:#2F303A ;
+      }
+      50%{
+        background-color:#fbff05 ;
+      }
+      
+      
+      100%{
+        background-color:  #004d8d;
+      }
+    }
+    
+   .sign__btn{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: #2196F3 ;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 12px;
+   }
+   .sign__icon{
+    margin-left: 10px;
+   }
+
+   
+   
+ 
+                   /* "ПОРТФОЛИО"  */
+   .filtr-space{
+        padding: 94px 215px ;
+    }
+       
+  .filtr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+
+   }
+   .filtr__button + .filtr__button{
+    margin-left: 8px;
+   }
+
+
+
+ .filtr__button{
+    background-color:#EEEEEE;
+    color:var(--nav-text-color);
+    cursor: pointer;
+
+    font-family:inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+
+   border-radius: 4px;
+   text-align: center;
+   padding: 6px 22px;
+   border:none ;
+   transition:
+   background-color 250ms var(--timing-fuction),
+   color 250ms var(--timing-fuction),
+   box-shadow 250ms var(--timing-fuction) ;
+
+    } 
+    .filtr__button:hover , .filtr__button:focus{
+        background-color:var(--accent-text-color) ;
+        color: var(--white-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }    
+    /* ПОРТФОЛИО ЛИСТ */
+    .portfolio__title{
+        color: var(--title-text-color);
+        font-size: 18px;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+        margin-top: 20px;
+        margin-bottom: 4px;
+        }
+    .potfolio__text{
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--primary-text-color);
+        }
+    .portfolio{
+       display: flex;
+       flex-wrap: wrap;
+       margin-left: auto;
+       margin-right: auto;
+       
+       font-size: 16px;
+    }
+    .portfolio__item{
+        max-width:370px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+     }
+   
+    .portfolio__item:nth-child(3n){
+        margin-right: 0;
+     }
+    .portfolio__item:nth-last-child(-n+3){
+        margin-bottom: 0;
+    }
+    .portfolio__description{
+        border: 1px solid #EEEEEE;
+        border-top: none;
+        padding: 20px 24px;
+    }
+      
+    .portfolio__link{
+        
+        text-decoration: none;
+        display: block;
+    }
+
+   .portfolio__link:hover{
+     border: 1px solid #EEEEEE;
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
+     rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+     
+    }
+   .portfolio__link:focus{
+    border: 1px solid #EEEEEE;
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
+     rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+   }
+   .portfolio__photo
+   {
+    display: block;
+    position: relative;
+    overflow: hidden;
+   }
+   .portfolio__overlay{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-fuction);
+    }
+    .portfolio__link:hover .portfolio__overlay{
+        transform: translateY(0);
+    }
+
+    .portfolio__link:focus .portfolio__overlay {
+        transform: translateY(0);
+    }
+     /* ------------------Модальное окно-------------------  */
+   .backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    opacity:1;
+
+    transition: opacity 250ms var(--timing-fuction);
+    
+   }
+    .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    
+    
+   }
+   .modal{ 
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    }
+    
+    .modal__title{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+    color: #212121;
+    margin-bottom: 12px;
+    margin-top: 0;
+    }
+
+   .modal__btn{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    }
+    
+    .modal__icon{
+        transition: fill 250ms var(--timing-fuction);
+    }
+
+    
+   
+     .modal__btn:hover svg{
+    fill: var(--accent-text-color);
+    
+   }
+     .modal__btn:focus svg {
+    fill: var(--accent-text-color);
+   }
+
+/* -------------Форми модального окна -------------------------- */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+}
+.form__input {
+    height: 40px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    padding: 12px 42px;
+    margin-top:4px;
+    transition: outline-color 250ms var(--timing-fuction);
+}
+.form__input:focus{
+    outline-color:var(--accent-text-color);
+}
+
+.form__icon{
+    position: absolute;
+    top:50%;
+    left: 12px;
+    transition: fill 250ms var(--timing-fuction);
+    
+}
+/* 
+.form-input:focus ~ svg{
+   fill: var(--accent-text-color);
+} */
+.form__field:focus-within{
+    fill: var(--accent-text-color);
+}
+
+
+.form__area {
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 12px 16px;
+margin-top: 4px;
+resize: none;
+transition: outline-color 250ms var(--timing-fuction);
+}
+.form__area::placeholder {
+
+color: rgba(117, 117, 117, 0.5);
+}
+.form__area:focus{
+    outline-color: var(--accent-text-color);
+}
+ .chekbox__input {
+    appearance: none; 
+   position: absolute;
+}
+ .chekbox__input:checked + .chekbox__vector{
+    background-color:var(--accent-text-color);
+    border-color: var(--accent-text-color);
+}
+
+.chekbox__vector {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 9px;
+    background-origin: border-box;
+    
+} 
+.chekbox__icon{
+  position: absolute;
+  fill: #FFFFFF;
+  
+}
+.chekbox{
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 10px;
+  margin-bottom: 30px; 
+ }
+
+
+.form__btn{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 2;
+    color: #FFFFFF;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: #188CE8;
+    border-radius: 4px;
+}
+
+
+.chekbox__text{
+  text-decoration-line: underline;
+  color: #2196F3;
+  margin-left: 5px;
+}
+
+
+
+
+        

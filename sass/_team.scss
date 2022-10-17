@@ -1,0 +1,117 @@
+.section__bg{
+background-color: #F5F4FA;
+min-width: $mobile;
+
+}
+
+
+.team{
+@media screen and (min-width:$tablet)and (max-width:1200px){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+} 
+@media screen and (min-width:$desktop){
+    display: flex;
+}
+}
+
+
+
+
+.team__item{
+
+         padding-bottom: 24px;
+        margin-bottom: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        width:100%;
+        background-color: #FFFFFF;
+        height: 622px;
+       
+
+    &:last-child{
+     margin-bottom: 0;
+  }
+  @media screen and (min-width:$tablet)and (max-width:1200px){
+    width: 354px;
+    height: 536px;
+    margin:0;
+    padding-bottom:0;
+
+  }
+  @media screen and (min-width:$desktop){
+    height: 428px;
+    margin:0;
+    padding-bottom: 30px;
+   
+  }
+}
+.team__title {
+ color: var(--title-text-color);
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.2;
+ margin-top:30px ;
+ margin-bottom: 10px;
+ text-align: center;
+ }
+ .team__position{
+
+font-size: 16px;
+line-height: 1.2;
+margin-top: 0;
+margin-bottom: 0;
+text-align: center;
+}
+    
+
+@media screen and (min-width:$desktop){
+    .team__item + .team__item{
+    margin-left: 30px;
+}
+}
+
+.social{
+display: flex;
+justify-content:center;
+margin: 16px 122px 0px 122px;
+gap: 10px;
+padding: 0;
+@media screen and (min-width:$desktop){
+    margin: 16px 32px 0px 32px;
+    justify-content: space-around;
+}
+&__icon{
+  
+    fill:#afb1b8 ;
+    transition: fill 250ms var(--timing-fuction);}
+&__item{
+    
+   width:44px;
+    height:44px; 
+    
+}
+
+    }
+
+.social__link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   width:44px;
+   height:44px;
+   transition: 
+   background 250ms var(--timing-fuction),
+   border-radius 250ms var(--timing-fuction)
+   ;
+  &:hover,&:focus{
+    background:var(--accent-text-color);
+    border-radius: 50%;
+  }
+  &:hover svg{fill: #FFFFFF;}
+  &:focus svg{ fill: #FFFFFF;}
+
+ }

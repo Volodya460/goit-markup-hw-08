@@ -1,0 +1,28 @@
+.logo {
+ color:#2196F3;
+ text-decoration: none;
+ font-family:'Raleway', sans-serif;
+ font-size: 26px;
+ line-height: 1.2;
+ transition: color 250ms var(--timing-fuction);
+ &:hover{
+    color:#0032d6;
+          }
+    @media screen and (min-width:$tablet)and (max-width:1199px){
+      font-size: 24px;
+    }      
+     }
+.logo-two {
+    color:#FFFFFF;
+    transition: color 250ms var(--timing-fuction);
+&:hover{
+  color:#ffee01;  
+ }
+}
+ .logo-three {
+    color:#000000;
+ transition: color 250ms var(--timing-fuction);
+ &:hover{
+    color:#fbff05;
+ }
+}

@@ -1,0 +1,111 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    &:focus-within{
+    fill: var(--accent-text-color);
+}
+}
+.form__input {
+    height: 40px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    padding: 12px 42px;
+    margin-top:4px;
+    transition: outline-color 250ms var(--timing-fuction);
+    &:focus{
+     outline-color:var(--accent-text-color);    
+    }
+}
+.form__icon{
+    position: absolute;
+    top:50%;
+    left: 12px;
+    transition: fill 250ms var(--timing-fuction);
+    
+}
+
+.form__area {
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 12px 16px;
+margin-top: 4px;
+resize: none;
+transition: outline-color 250ms var(--timing-fuction);
+&::placeholder{color: rgba(117, 117, 117, 0.5);}
+&:focus{
+    outline-color: var(--accent-text-color);
+}
+}
+.chekbox__input {
+    appearance: none; 
+   position: absolute;
+   
+}
+.chekbox__vector {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 9px;
+    background-origin: border-box;
+.chekbox__input:checked + & {
+    background-color:var(--accent-text-color);
+    border-color: var(--accent-text-color);
+}
+    
+} 
+
+
+.chekbox__icon{
+  position: absolute;
+  fill: #FFFFFF;
+  
+}
+.chekbox{
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  @media screen and (max-width:1199px){
+    margin-left: 0px;
+  }
+    
+   
+ }
+ .form__btn{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 2;
+    color: #FFFFFF;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: #188CE8;
+    border-radius: 4px;
+}
+.chekbox__text{
+  text-decoration-line: underline;
+  color: #2196F3;
+  margin-left: 5px;
+}
